@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2b9eeb;
+  --secondary-color: #195779;
+  --tertiary-color: #000000;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 5%;
+}
+
+
+/* HEADER / NAV BAR STYLES START */
+
+header {
+  padding: 20px 35px;
+  background-color: var(--tertiary-color);
+  z-index: 9999;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: "";
+}
+
+header a {
+  text-decoration: none;
+  color: "";
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*END -- HEADER / NAV STYLE SECTION*/
+
+/*HERO SECTION*/
+
+.hero {
+  background-image: url("./images/blue\ background\ image.png");
+  display: inline-block;
+}
+
+/*END -- HERO SECTION*/
+
+/*ABOUT ME SECTION*/
+
+.about-me img {
+  flex: 1 12%;
+  float: left;
+  size: 400 px;
+}
+
+/*END -- ABOUT ME SECTION*/
+
+/*FOOTER*/
+
+footer {
+  flex-wrap: wrap;
+  background: "";
+  width: 100%;
+  padding: 40px 35px;
+}
+/*END -- FOOTER*/
+
+
+
+/* UTILITIES */
+.text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .flex-row {
+    display: flex;
+  }
+  
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      border: none;
+      background: var(--terciary-color);
+      color: var(--secondary-color);
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+      width: 100%;
+    }
+    
+    .hero-cta {
+      text-align: center;
+    }
+  
+    .section-title {
+      width: 80%;
+    }
+    
+    .trainer {
+      flex: 0 70%;
+    }
+    
+    .contact-info iframe{
+      flex: 1 100%;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  
+    .contact-form {
+      order: 3;
+    }
+  }
