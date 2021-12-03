@@ -104,6 +104,11 @@ position: relative;
 
 /*END -- ABOUT ME SECTION*/
 
+.work img {
+  max-width: 100%;
+  height: 400px;
+}
+
 /*FOOTER*/
 
 footer {
@@ -159,27 +164,6 @@ footer {
       text-align: center;
       width: 100%;
     }
-  
-    .hero-cta, .hero-form {
-      width: 100%;
-    }
-    
-    .hero-cta {
-      text-align: center;
-    }
-  
-    .section-title {
-      width: 80%;
-    }
-    
-    .trainer {
-      flex: 0 70%;
-    }
-    
-    .contact-info iframe{
-      flex: 1 100%;
-    }
-  }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
