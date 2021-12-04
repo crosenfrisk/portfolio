@@ -19,7 +19,7 @@
           <a href="#about-me">About Me</a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
@@ -30,61 +30,73 @@
         </ul>
       </nav>
 
-      <!-- HERO SECTION -->
-      <section class="hero">
+      <!-- BANNER SECTION -->
+      <section class="banner">
         <img src="./assets/images/bannerbar.png" alt="" />
       </section>
       
       <!-- CONTENT SECTION -->
 
-      <section class="content">
+      <section class="flex-container">
         <!-- ABOUT ME -->
-        <div id="about-me">
-          <h2 class="sidebar">About Me</h2>
-          <p class="text-right">
-            Hi, I'm Claire!
-            <br><br>
-            You might know me from around the Twin Cities as a yoga teacher or a massage therapist. The past two years have inspired me to expand my knowledge base
-            and explore careers outside of the health and wellness industry. 
-            <br><br>
-            I am currently a student of Web Development with University of Minnesota and Trilogy Education Services, LLC.
-            <br><br>
-          </p>
-        </div>
-
-        <!-- WORK  -->
-        <div id="work"> <!--create a sidebar for About Me, Work, and Contact, then add vertical line, and float content right-->
-          <h2 class="sidebar">Work</h2>
-
-          <div class="big">
-                <a href="https://crosenfrisk.github.io/horiseon/" target="_blank">Horiseon</a>
-                <img src="./assets/images/horiseon.jpg" alt="group of workers gather around a desk" />
+        <div class="flex-item" id="about-me">
+            <h2>About Me</h2>
+            <div class="vertical-line"></div>
+            <p>
+              Hi, I'm Claire!
+              <br>
+              You might know me from around the Twin Cities as a yoga teacher or a massage therapist. The past two years have inspired me to expand my knowledge base
+              and explore careers outside of the health and wellness industry. 
+              <br>
+              I am currently a student of Web Development with University of Minnesota and Trilogy Education Services, LLC.
+              <br>
+            </p>
           </div>
 
-          <div class="small">
-            <a href="https://crosenfrisk.github.io/run-buddy/" target="_blank">Run Buddy</a>
+        <!-- WORK  -->
+        <div class="flex-item" id="projects"> <!--create a sidebar for About Me, Work, and Contact, then add vertical line, and float content right-->
+          <h2>Projects</h2>
+          <div class="vertical-line"></div>
+
+            <div class="big">
+              <a href="https://crosenfrisk.github.io/horiseon/" target="_blank">Horiseon</a>
+              <img src="./assets/images/horiseon.jpg" alt="group of workers gather around a desk" />
+            </div>
+
+            <div class="small">
+            <!--<a href="https://crosenfrisk.github.io/run-buddy/" target="_blank">Run Buddy</a>-->
             <img src='./assets/images/runbuddy.jpg' alt="sample trainer bio" />
 
-            <a href="https://crosenfrisk.github.io/Run-Buddy-2.0/" target="_blank">Run Buddy 2.0</a>
+            <!--a href="https://crosenfrisk.github.io/Run-Buddy-2.0/" target="_blank">Run Buddy 2.0</a>-->
              <img src="assets/images/Run-Buddy-2.0.jpg" alt="banner with runner" />
           
-            <a href="https://crosenfrisk.github.io/robot-gladiators/" target="_blank">Robot Gladiators!</a>
+            <!--<a href="https://crosenfrisk.github.io/robot-gladiators/" target="_blank">Robot Gladiators!</a>-->
             <img src="assets/images/robotgladiators.jpg" alt="basic black box to enter commands" />
           </div>
         </div>
 
         <!-- Contact Me -->
-        <div id="contact">
-          <h2 class="sidebar">Contact</h2>
-            <a href="claire.rosenfrisk@gmail.com">claire.rosenfrisk@gmail.com</a>
-            <a href="(651) 324-2528">(651) 324-2528:</a>
-            <a href="https://github.com/crosenfrisk">GitHub</a>
+        <div class="flex-item" id="contact">
+          <h2>Contact</h2>
+          <div class="vertical-line"></div>
+            <ul>
+              <li>
+              <a href="claire.rosenfrisk@gmail.com"> claire.rosenfrisk@gmail.com </a>
+              </li>
+              <li>
+              <a href="(651) 324-2528"> (651) 324-2528: </a>
+              </li>
+              <li>
+              <a href="https://github.com/crosenfrisk"> GitHub </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </section>
 
   <footer>
-    <h2>Page Created by Claire Rosenfrisk</h2>
+    <h3>Page Created by Claire Rosenfrisk</h3>
   </footer>
 </body>
 
