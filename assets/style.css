@@ -9,6 +9,7 @@
   --plum: #b1a5a5;
   --black: #000000;
   --dutsty: #666166;
+  --white: #FFFFFF;
 
 }
 
@@ -94,7 +95,7 @@ nav ul {
 
 /*  BANNER SECTION */
 
-.banner img {
+.portait {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -103,8 +104,36 @@ nav ul {
   background-position: center;
   position: relative;
   max-height: 200px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-height: 200px;
   }
+
+.greeting {
+  position: relative;
+  justify-content: flex-end;
+  bottom: 55px;
+  left: 25px;
+  font-style: italic;
+}
   
+  h2 {
+    font-size: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    align-content: flex-end;
+    color: var(--white);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
+  }
 /*  END -- BANNER SECTION*/
 
 /*  ABOUT ME SECTION*/
@@ -118,7 +147,11 @@ nav ul {
   justify-content: left;
 }*/
 
-h2 {
+/*.flex-container {
+  max-width: 700px;
+}*/
+
+h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -148,6 +181,10 @@ p {
 
 /*  WORK SECTION */
 
+.projects {
+  padding-left: 150px;
+}
+
 .big img {
   flex-basis: 77%;
   width: 100%;
@@ -158,7 +195,7 @@ p {
   align-items: flex-end;
   justify-content: space-between;
   padding: 0;
-  width: 33%;
+  width: 32.9%;
   border: 3px solid var(--dutsty);
 }
 
