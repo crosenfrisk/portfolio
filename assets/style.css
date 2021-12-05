@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   box-sizing: border-box;
 }
 
@@ -10,13 +10,12 @@
   --black: #000000;
   --dutsty: #666166;
   --white: #FFFFFF;
-
 }
 
 body {
   background-color: var(--plum);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 5%;
+  padding: 5% 5%;
 }
 
 
@@ -55,7 +54,7 @@ header img {
   border-radius: 50%;
   border: 3px solid var(--dutsty);
   margin: 30px auto 10px auto;
-  }
+}
 
 .container {
   display: flex;
@@ -108,32 +107,34 @@ nav ul {
 
 .banner {
   display: flex;
+  align-items: flex-start;
+  background-image: url('./images/bannerbar.png');
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
+  height: 150px;
   background-size: cover;
   background-position: center;
   position: relative;
-  max-height: 200px;
   }
 
-.greeting {
+/*.greeting {
   position: relative;
-  justify-content: flex-end;
-  bottom: 55px;
-  left: 25px;
+  margin-right: 5px;
+  margin-top: ;
   font-style: italic;
 }
   
-  h2 {
-    font-size: 3vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: lighter;
-    align-content: flex-end;
-    color: var(--white);
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    margin-top: 25px;
-  }
+h2 {
+  font-size: 3vw;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: lighter;
+   align-content: flex-end;
+   color: var(--white);
+   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+   margin-top: 25px;
+  }*/
+
 /*  END -- BANNER SECTION*/
 
 /*  ABOUT ME SECTION*/
@@ -147,43 +148,56 @@ nav ul {
   justify-content: left;
 }*/
 
-/*.flex-container {
-  max-width: 700px;
-}*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 25px;
+  width: 100%;
+}
 
 h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  font-size: 3vw;
+  flex-basis: 20%;
+  font-size: 3rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  align-content: left;
-  margin-top: 25px;
+  text-align: right;
+  padding-right: 25px;
 }
 
-.vertical-line {
+.box-right {
   position: relative;
-  padding-right: 100px;
+  flex: 1;
+  align-items: space-between;
+  height: auto;
   border-left: 5px solid var(--dutsty);
-  height: 200px;
 }
 
-p {
+.box-right p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 20px;
+  padding-left: 50px;
   font-size: 1.55vw;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: left;
 }
 
 
+
+
 /*  WORK SECTION */
 
-.projects {
-  padding-left: 150px;
-}
+.box-right.projects {
+  padding-left: 50px;
+  }
 
 .big img {
   flex-basis: 77%;
@@ -191,11 +205,14 @@ p {
   border: 3px solid var(--dutsty);
 }
 
-.small img {
+.small {
+  display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.small img {
   padding: 0;
-  width: 32.9%;
+  width: 33%;
   border: 3px solid var(--dutsty);
 }
 
@@ -203,14 +220,19 @@ p {
 
 /*  CONTACT SECTION */
 
-.flex-item ul li {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: right;
-  align-items: flex-end;
-  list-style: none;
-  padding-left: 100px;
+.flex-item p {
+  font-weight: lighter;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.flex-item a {
+  text-decoration: underline;
+  color: #666166;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  margin-right: 25px;
 }
 
 /*  END CONTACT SECTION */
@@ -219,7 +241,7 @@ p {
 
 
 /*FOOTER*/
-.footer h3{
+.footer h4{
   font-weight: lighter;
   font-size: 1vw;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -229,131 +251,3 @@ p {
   align-content: center;
 }
 /*END -- FOOTER*/
-
-  
-  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-  @media screen and (max-width: 980px) {
-    header {
-      justify-content: center;
-      position: relative;
-    }
-  
-    header h1 {
-      width: 100%;
-      border: none;
-      background: var(--plum);
-      color: var(--plum);
-      text-align: center;
-    }
-  
-    header nav ul {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-    }
-  
-    header nav ul li a {
-      font-size: 20px;
-    }
-
-    .content h2 {
-      display: flex;
-      margin-block-start: 2px;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-    }
-    
-    .content p {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: right;
-      align-items: right;
-    }
-  
-    footer h2, footer div {
-      text-align: center;
-      width: 100%;
-    }
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    header {
-      justify-content: center;
-      position: relative;
-    }
-  
-    header h1 {
-      width: 100%;
-      border: none;
-      background: var(--plum);
-      color: var(--plum);
-      text-align: center;
-    }
-  
-    header nav {
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-      font-size: 1.55vw;
-    }
-    
-    .content h2 {
-      display: flex;
-      margin-block-start: 2px;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-    }
-    
-    .content p {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: right;
-      align-items: right;
-    }
-  
-    footer h2, footer div {
-      text-align: center;
-      width: 100%;
-    }
-  }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-    header {
-      width: 100%;
-    }
-
-    h1 {
-      width: 100%;
-      font-size: 3vw;
-      background: var(--plum);
-      color: var(--plum);
-      text-align: center;
-
-    }
-    .container {
-      width: 95%;
-    }
-
-    header nav a {
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 2vw;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-    }
-  
-    .about-me p {
-      margin-top: 20px;
-      display: inline-flex;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-    }
-  }
-};
