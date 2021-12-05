@@ -1,13 +1,35 @@
  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
     
+    header {
+        flex: auto;
+    }
+
+    h1 {
+        font-size: 1.55vw;
+    }
+    
     nav a{
         font-size: 16px;
     }
 
-    h3{
-        font-size: 1vw;
+    h3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis: 20%;
+        font-size: 1.55vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: right;
     }
+
+    .box-right {
+        position: relative;
+        flex: 1;
+        align-items: space-between;
+        height: auto;
+        border-left: 3px solid var(--dutsty);
+      }
 
     .flex-item p {
         font-weight: lighter;
@@ -15,5 +37,20 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         padding-top: 20px;
         padding-bottom: 50px;
+    }
+
+    .big img {
+        flex-basis: 77%;
+        width: 80%;
+        padding: 3px;
+        background: var(--dutsty);
+      }
+
+    .small img {
+        flex-basis: 77%;
+        width: 100%;
+        padding: 10px;
+        background: var(--dutsty);
+          }
     }
 }

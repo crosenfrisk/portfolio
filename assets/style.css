@@ -22,7 +22,7 @@ body {
 /* HEADER / NAV BAR STYLES START */
 
 header {
-  display: inl;
+  display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 20px 35px;
@@ -196,18 +196,22 @@ h3 {
 /*  WORK SECTION */
 
 .box-right.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
   padding-left: 50px;
   }
 
 .big-project-title {
   position: relative;
   bottom: 75px;
-  left: 16px;
+  left: 5px;
   color: var(--white);
   font-size: 36px;
   font-weight: bolder;
   height: 55px;
-  width: 200px;
+  width: 180px;
   text-align: left;
   background-color: var(--dutsty);
 }
@@ -223,20 +227,16 @@ h3 {
   opacity: 50%;
 }
 
-.small {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .small img {
+  align-content: space-between;
   width: 30%;
   background: var(--dutsty);
-  justify-content: space-around;
 }
 
 .small-projects-title {
   position: relative;
-  bottom: 50px;
+  bottom: 70px;
+  left: 5px;
   color: var(--white);
   font-size: 24px;
   font-weight: bolder;
@@ -275,13 +275,4 @@ h3 {
 
 
 /*FOOTER*/
-.footer h4{
-  font-weight: lighter;
-  font-size: 1vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: var(--plum);
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
 /*END -- FOOTER*/
