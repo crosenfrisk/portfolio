@@ -199,21 +199,55 @@ h3 {
   padding-left: 50px;
   }
 
+.big-project-title {
+  position: relative;
+  bottom: 75px;
+  left: 16px;
+  color: var(--white);
+  font-size: 36px;
+  font-weight: bolder;
+  height: 55px;
+  width: 200px;
+  text-align: left;
+  background-color: var(--dutsty);
+}
+
 .big img {
   flex-basis: 77%;
   width: 100%;
-  border: 3px solid var(--dutsty);
+  padding: 10px;
+  background: var(--dutsty);
+}
+
+.big img:hover{
+  opacity: 50%;
 }
 
 .small {
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.small img {
+  width: 30%;
+  background: var(--dutsty);
   justify-content: space-around;
 }
-.small img {
-  padding: 0;
-  width: 33%;
-  border: 3px solid var(--dutsty);
+
+.small-projects-title {
+  position: relative;
+  bottom: 50px;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: bolder;
+  height: 40px;
+  width: 120px;
+  text-align: justify;
+  background-color: var(--dutsty);
+}
+
+.small img:hover{
+  opacity: 50%;
 }
 
 /*  END WORK SECTION */
