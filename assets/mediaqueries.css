@@ -1,4 +1,3 @@
- /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
     
     header {
@@ -14,29 +13,16 @@
     }
 
     h3 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        flex-basis: 20%;
         font-size: 1.55vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: right;
+        text-align: center;
     }
 
     .box-right {
-        position: relative;
-        flex: 1;
-        align-items: space-between;
-        height: auto;
-        border-left: 3px solid var(--dutsty);
+        border-bottom: 3px solid var(--dutsty);
       }
 
     .flex-item p {
-        font-weight: lighter;
-        font-size: 1rem;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        padding-top: 20px;
-        padding-bottom: 50px;
+        font-size: 1.55vw;
     }
 
     .big img {
@@ -53,4 +39,3 @@
         background: var(--dutsty);
           }
     }
-}
