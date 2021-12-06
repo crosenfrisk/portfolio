@@ -1,10 +1,14 @@
 # Portfolio
 
 ## Table of Contents
+*[About the Project](About-the-Project)
 *[View the Project](View-The-Project)
 *[Challenges Faced](#Challenges-Faced)
 *[What I Enjoyed!](#What-I-Enjoyed)
 *[Credits](Credits)
+
+### About the Project
+This website is certainly a work in progress, but now I have a page that showcases the projects I have been working on in Bootcamp. I will continue to update as times goes on. My portfolio currently demonstrates my ability to work and think creatively.
 
 ### View the Project
 
