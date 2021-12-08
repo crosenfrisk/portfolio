@@ -12,6 +12,8 @@ This website is certainly a work in progress, but now I have a page that showcas
 
 ### View the Project
 
+![this is an image](../portfolio/assets/images/portfolio_screenshot.png)
+
 https://crosenfrisk.github.io/portfolio/
 
 ### Challenges Faced
