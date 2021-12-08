@@ -12,7 +12,7 @@ This website is certainly a work in progress, but now I have a page that showcas
 
 ### View the Project
 
-![screenshot image](../portfolio/assets/images/portfolio_screenshot.png)
+![Screenshot of Portfolio](assets/images/portfolio_screenshot.png)
 
 https://crosenfrisk.github.io/portfolio/
 
