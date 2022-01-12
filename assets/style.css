@@ -232,7 +232,7 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  flex-basis: calc(30%-1em);
+  flex-basis: calc(25%-1em);
 }
 
 .small img {
